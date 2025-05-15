@@ -1,0 +1,214 @@
+﻿<Window x:Class="SampleAppLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleAppLogin"
+        mc:Ignorable="d"
+        Title="AppLogin" Height="450" Width="800"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    
+    <Border  Margin="30">
+       
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Border>
+                <Border.Background>
+                    <ImageBrush ImageSource="Image\LoginPageImage\loginpageimage.jpg"></ImageBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="16" Color="Black" Direction="180"></DropShadowEffect>
+                </Border.Effect>
+            </Border>
+            <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Welcome Back"  x:Name="Welcomtext" Style="{StaticResource  WelcometextStyle}"></TextBlock>
+                <TextBlock Style="{StaticResource  InfoStyleONe}" >
+                Join us and explore new possibilities. Your journey starts here
+                 <LineBreak/> 
+                secure, fast, and effortless.
+              Let’s make today productive!     
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Learn More" Style="{StaticResource  LeanrmoreStyle}" x:Name="Learnmorebnt" Click="Learnmorebnt_Click"></Button>
+                    <Button Content="Our Features" Style="{StaticResource OurFeaturesStyle}" x:Name="Ourferbnt" Click="Ourferbnt_Click"></Button>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1" x:Name="Logpage" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Login"  Style="{StaticResource LoginTitleStyle}"></TextBlock>
+                <TextBlock Style="{StaticResource InfoStyleTwo}">
+                    Join us and explore new possibilities. Your journey starts here
+                    <LineBreak/> 
+                    secure, fast, and effortless.
+                    Let’s make today productive!     
+                 </TextBlock>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0"   >
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                            <Border Width="20" Height="20" >
+                                <Border.Background>
+                                    <ImageBrush ImageSource="Image\LoginPageImage\username.png"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBox   Style="{StaticResource UsernameStyle}"></TextBox>
+                        </StackPanel>
+                        <Label x:Name="usernamealt" Content="*Enter a vaild Username" Visibility="Collapsed" Foreground="Red" Padding="20,0,0,0"   ></Label>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" >
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                            <Border Width="20" Height="20" >
+                                <Border.Background>
+                                    <ImageBrush ImageSource="Image\LoginPageImage\passwordlog.png"></ImageBrush>
+                                </Border.Background>
+                            </Border>
+                            <PasswordBox   Style="{StaticResource PasswordStyle}"></PasswordBox>
+                        </StackPanel>
+                        <Label x:Name="passwordalt" Content="*Enter a vaild Password" Visibility="Collapsed"  Foreground="Red" Padding="20,0,0,0"    ></Label>
+
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,20,0,0">
+                        <CheckBox Content="Remember Me" Style="{StaticResource RememberMeStyle}" >
+                            
+                        </CheckBox>
+                        <Button Content="Forget Password?" x:Name="Forgetpass" Click="Forgetpass_Click" Style="{StaticResource ForgetPasswordStyle}">
+
+                        </Button>
+
+                    </StackPanel>
+                    <Button  Grid.Row="3" Content="Login" x:Name="Loginbnt"  Click="Loginbnt_Click"  Style="{StaticResource LoginBntStyle}" > </Button>
+                    
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,30,0,0" HorizontalAlignment="Center">
+                        
+                        <TextBlock Style="{StaticResource donthaveAccountStyle}"> Don't have a Account? </TextBlock>
+                        <Button Content="Sign Up" Name="Signup" Click="Signup_Click" Style="{StaticResource SignUpStyle}"></Button>
+
+                       </StackPanel>
+        </Grid>
+
+        
+        </StackPanel>
+            <StackPanel x:Name="RegPage" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible"  >
+                <TextBlock Text="Sign Up"  Margin="0,20,0,0"  Style="{StaticResource LoginTitleStyle}" ></TextBlock>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,15,0,0"  >
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="Image\LoginPageImage\username.png"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox  x:Name="username"  Style="{StaticResource UsernameStyle}">
+
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,15,0,0">
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="Image\LoginPageImage\passwordlog.png"></ImageBrush>
+                            </Border.Background>
+                        </Border>
+                        <PasswordBox x:Name="userpass"  Style="{StaticResource PasswordStyle}">
+
+                        </PasswordBox>
+                        
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,15,0,0">
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="C:\Users\NAVINDRA\source\repos\SampleAppLogin\SampleAppLogin\Image\LoginPageImage\Conform-password.png"></ImageBrush>
+                            </Border.Background>
+                        </Border>
+                        <PasswordBox  x:Name="userconfpass" Style="{StaticResource PasswordStyle}">
+
+                        </PasswordBox>
+
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,15,0,0" >
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="C:\Users\NAVINDRA\source\repos\SampleAppLogin\SampleAppLogin\Image\LoginPageImage\telephone.png"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox  x:Name="UserNumber" Style="{StaticResource UsernameStyle}">
+
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,15,0,0" >
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="C:\Users\NAVINDRA\source\repos\SampleAppLogin\SampleAppLogin\Image\LoginPageImage\email.png"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox x:Name="userMail" Style="{StaticResource UsernameStyle}">
+
+                        </TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="0,15,0,0"  >
+                        <Border Width="20" Height="20" >
+                            <Border.Background>
+                                <ImageBrush ImageSource="C:\Users\NAVINDRA\source\repos\SampleAppLogin\SampleAppLogin\Image\LoginPageImage\gps.png"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox  x:Name="userlocation"  Style="{StaticResource UsernameStyle}">
+
+                        </TextBox>
+                    </StackPanel>
+
+                    <Button  Grid.Row="7" Content="Register" x:Name="Registerbnt" Click="Registerbnt_Click" Margin="0,25,0,0" Style="{StaticResource LoginBntStyle}" ></Button>
+
+                    <StackPanel Grid.Row="8" Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+
+                        <TextBlock Style="{StaticResource donthaveAccountStyle}"> Already have a Account?</TextBlock>
+                        <Button Content="Sign In" x:Name="SignIn" Click="SignIn_Click" Style="{StaticResource SignUpStyle}"></Button>
+
+                    </StackPanel>
+                </Grid>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
+
+
+
+
+<!--<Path   Stretch="Uniform">
+
+    <Path.Fill>
+        <ImageBrush ImageSource=""></ImageBrush>
+    </Path.Fill>
+    <Path.Data>
+        <PathGeometry  >
+            <PathFigure StartPoint="300,0" IsClosed="True"  >
+                <LineSegment Point="400,0" />
+                <BezierSegment Point1="150,150" Point2="350,350" Point3="400,400"  />
+                <LineSegment Point="0,400" />
+                <LineSegment Point="0,0 "/>
+                <LineSegment Point="0,0" />
+            </PathFigure>
+        </PathGeometry>
+    </Path.Data>
+</Path>-->
