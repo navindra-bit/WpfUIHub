@@ -6,8 +6,8 @@ A collection of modern, reusable WPF UI components built with XAML for .NET desk
 
 ## 🔥 Preview
 
-![Login UI](LoginRegisterUI/Preview image/LogPage.png)
-![Register UI](https://github.com/navindra-bit/WpfUIHub/blob/3f91fe4017eb45964ea341e309404d3de56710b3/LoginRegisterUI/Preview%20image/RegPage.png)
+![Login UI](LoginRegisterUI/Preview%20image/LogPage.png)
+![Register UI](LoginRegisterUI/Preview%20image/RegPage.png)
 
 ---
 
