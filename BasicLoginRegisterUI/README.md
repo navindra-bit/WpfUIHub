@@ -38,8 +38,8 @@ LogAndReg/
 ```
 ## 🚀 Getting Started
 📦 Prerequisites
- Visual Studio 2019 or 2022
- .NET Framework 4.x or .NET Core 3.1 / .NET 5+
+  - Visual Studio 2019 or 2022
+  - .NET Framework 4.x or .NET Core 3.1 / .NET 5+
 
 ## 🧪 Clone the repository
 1. repository:
