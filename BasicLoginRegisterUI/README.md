@@ -45,6 +45,3 @@ LogAndReg/
 1. repository:
    ```bash
     git clone https://github.com/navindra-bit/WpfUIHub.git
-
-
-
