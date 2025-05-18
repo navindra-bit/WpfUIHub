@@ -19,11 +19,12 @@ This project is a simple WPF (Windows Presentation Foundation) application built
 
 ## 📷 Screenshots
 
-##Login Screenshot
-![Login Screenshot]([screenshots/login.png](https://github.com/navindra-bit/WpfUIHub/blob/03ea653e8b9171fed9371c9e8a401c45f8b7077e/BasicLoginRegisterUI/Preview%20img%26vid/LoginImg.png))  
+### Login Screenshot  
+![Login Screenshot](https://github.com/navindra-bit/WpfUIHub/blob/main/BasicLoginRegisterUI/Preview%20img%26vid/LoginImg.png?raw=true)
 
-##Registration Screenshot
-![Registration Screenshot]([screenshots/register.png](https://github.com/navindra-bit/WpfUIHub/blob/03ea653e8b9171fed9371c9e8a401c45f8b7077e/BasicLoginRegisterUI/Preview%20img%26vid/RegisterImg.png))
+### Registration Screenshot  
+![Registration Screenshot](https://github.com/navindra-bit/WpfUIHub/blob/main/BasicLoginRegisterUI/Preview%20img%26vid/RegisterImg.png?raw=true)
+
 
 
 ## 🧩 Project Structure
