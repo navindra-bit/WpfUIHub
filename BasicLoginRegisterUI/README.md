@@ -42,9 +42,9 @@ LogAndReg/
  #.NET Framework 4.x or .NET Core 3.1 / .NET 5+
 
 ## 🧪 Clone the repository
-git clone https://github.com/navindra-bit/WpfUIHub.git
+1. repository:
+   ```bash
+    git clone https://github.com/navindra-bit/WpfUIHub.git
 
-# Open the solution in Visual Studio
-# Build the project
-# Run the application (F5)
+
 
