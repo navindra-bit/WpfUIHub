@@ -1,37 +1,78 @@
-# WpfUIHub
+# 🌌 SimpleAstrologyApp
 
-WpfUIHub is a curated collection of modern, reusable WPF (Windows Presentation Foundation) UI layouts and components.
-The goal is to provide clean, ready-to-use XAML interfaces for building beautiful .NET desktop applications.
-
----
-
-## 📦 What's Inside
-
-- Pre-built login and registration screens
-- Custom styling and reusable resources
-- Clean layout with modern design principles
-- Organized structure for easy integration
+SimpleAstrologyApp is a WPF-based desktop application that predicts lifespan based on user-provided birth year and lifestyle habits. It’s designed to combine basic astrology logic with wellness inputs to offer health suggestions and an estimated life expectancy.
 
 ---
 
-## 🎯 Purpose
+## 🧰 Features
 
-This repository is made for beginners who are learning WPF (Windows Presentation Foundation).  
-It contains simple and clean UI designs like login and registration pages, built using XAML.
+- 🎨 Elegant parchment-style UI with astrology-themed background
+- 🧑 Personal Info section (Full Name, Year of Birth)
+- 💡 Lifestyle Habit inputs:
+  - Smoking
+  - Alcohol Consumption
+  - Exercise Routine
+  - Diet & Nutrition
+  - Sleep Quality
+  - Work-Life Balance
+  - Mental Well-being
+- 🧮 Intelligent prediction of estimated lifespan and years remaining
+- ✅ Friendly health suggestions based on habits
+- 📜 Clear and Submit buttons
 
-You can use these designs as:
+---
 
-- A starting point for your own WPF projects
-- Practice material to understand how WPF UI is created
-- Templates to quickly build desktop apps
+## 🛠️ Built With
 
-It helps new developers learn by example and save time while building beautiful apps.
-
+- 💻 **WPF** (.NET Framework)
+- 🧾 XAML (for UI layout)
+- 👨‍💻 C# (business logic)
+- 🖼️ Custom parchment-style background image and app icon
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/navindra-bit/WpfUIHub.git
+### Prerequisites
+
+- Visual Studio (2022 or later)
+- .NET Desktop Development workload
+- Windows OS
+
+### Setup Instructions
+
+1. **Clone or download this repository**
+2. Make sure the image `AstrologyBG.png` is inside a folder named `IconANDimage`
+3. Right-click the image in Solution Explorer → Set **Build Action** to `Resource`
+4. Open `MainWindow.xaml` and run the project
+
+> 📦 Note: The background image is embedded as a resource using a `pack://application` URI
+
+---
+
+## 🖼️ Image Assets
+
+| File                | Purpose          |
+|---------------------|------------------|
+| `AstrologyBG.png`   | Window background|
+| `parchment.png`     | App icon         |
+
+---
+
+## 📸 Screenshot
+
+![App Screenshot](./IconANDimage/AstrologyBG.png)
+
+---
+
+## 📣 Disclaimer
+
+This app is for **educational/demonstration** purposes only and does **not provide medical or professional life predictions**. Results are based on fixed scoring logic.
+
+---
+
+## 🪐 Author
+
+**Navindra M**  
+Made with 💖 and WPF
+
