@@ -46,8 +46,6 @@ SimpleAstrologyApp is a WPF-based desktop application that predicts lifespan bas
 3. Right-click the image in Solution Explorer → Set **Build Action** to `Resource`
 4. Open `MainWindow.xaml` and run the project
 
-> 📦 Note: The background image is embedded as a resource using a `pack://application` URI
-
 ---
 
 ## 🖼️ Image Assets
