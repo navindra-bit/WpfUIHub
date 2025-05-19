@@ -61,7 +61,7 @@ SimpleAstrologyApp is a WPF-based desktop application that predicts lifespan bas
 
 ## 📸 Screenshot
 
-![App Screenshot](./preview Img&Vid/PreviewAstrology.png)
+![App Screenshot](./preview%20Img&Vid/PreviewAstrology.png)
 
 ---
 
