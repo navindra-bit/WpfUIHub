@@ -1,0 +1,142 @@
+﻿<Window x:Class="Astrology.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Astrology"
+        mc:Ignorable="d"
+        Title="AstrologyApp"
+        Height="450" Width="800"
+        Icon="IconANDimage/parchment.png">
+
+    <ScrollViewer>
+        <StackPanel>
+            <!-- Background -->
+            <StackPanel.Background>
+                <ImageBrush ImageSource="IconANDimage/AstrologyBG.png" Stretch="Fill"></ImageBrush>
+            </StackPanel.Background>
+
+            <!-- Personal Info -->
+            <Label Content="PERSONAL INFO" FontWeight="Bold" Foreground="#FFD700"  FontSize="16"
+                HorizontalAlignment="Center" Margin="0,20,0,0" BorderThickness="4" />
+
+            <StackPanel Margin="10">
+                <!-- Full Name -->
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="Full Name "  Foreground="#FAEBD7" VerticalAlignment="Center" />
+                    <TextBlock Text="*" Width="65"  Foreground="red" VerticalAlignment="Center" />
+                    <TextBox x:Name="NameBox" Width="200" BorderThickness="2" ToolTip="Enter your full name as per official records." />
+                </StackPanel>
+
+                <!-- Year of Birth -->
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="Year of Birth" Foreground="#FAEBD7" VerticalAlignment="Center" />
+                    <TextBlock Text=" *" Width="58"  Foreground="red" VerticalAlignment="Center" />
+                    <ComboBox x:Name="AgeBox" Width="200" BorderThickness="2"
+                              ToolTip="Select the year you were born"
+                              Loaded="AgeBox_Loaded"
+                              SelectionChanged="AgeBox_SelectionChanged" />
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Lifestyle Habit Section -->
+            <Label Content="LIFESTYLE HABIT"  Foreground="#8B4513"   FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,0" BorderThickness="4" />
+
+            <!-- Smoking -->
+            <GroupBox Header="Smoking Habits" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="YesButton" GroupName="Smoking" Content="YES" Margin="5" />
+                    <RadioButton x:Name="NoButton" GroupName="Smoking" Content="NO" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Alcohol -->
+            <GroupBox Header="Alcohol Consumption" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="YesalcoholButton" GroupName="Alcohol" Content="YES" Margin="5" />
+                    <RadioButton x:Name="NalcoholButton" GroupName="Alcohol" Content="NO" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Exercise -->
+            <GroupBox Header="Exercise Routine" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="SometimeButton" GroupName="Exercise" Content="SOMETIMES" Margin="5" />
+                    <RadioButton x:Name="NeverButton" GroupName="Exercise" Content="NEVER" Margin="5" />
+                    <RadioButton x:Name="Dailybutton" GroupName="Exercise" Content="DAILY" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Diet -->
+            <GroupBox Header="Diet and Nutrition" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="HealthyDiet" GroupName="Diet" Content="HEALTHY DIET" Margin="5" />
+                    <RadioButton x:Name="NotHealthyDiet" GroupName="Diet" Content="UNHEALTHY DIET" Margin="5" />
+                    <RadioButton x:Name="bothHealthyDiet" GroupName="Diet" Content="MIXED DIET" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Sleep -->
+            <GroupBox Header="Sleep Quality" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="Sleep1" GroupName="Sleep" Content="GOOD SLEEP (7-9 HOURS)" Margin="5" />
+                    <RadioButton x:Name="sleep2" GroupName="Sleep" Content="POOR SLEEP (LESS THAN 5 HOURS)" Margin="5" />
+                    <RadioButton x:Name="Sleep3" GroupName="Sleep" Content="INCONSISTENT SLEEP" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Work-Life Balance -->
+            <GroupBox Header="Work-Life Balance" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="GoodWorkLifeBalance" GroupName="WorkLife" Content="GOOD BALANCE" Margin="5" />
+                    <RadioButton x:Name="ModerateWorkLifeBalance" GroupName="WorkLife" Content="MODERATE BALANCE" Margin="5" />
+                    <RadioButton x:Name="PoorWorkLifeBalance" GroupName="WorkLife" Content="WORKS TOO MUCH, HIGH STRESS" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Mental Health -->
+            <GroupBox Header="Mental Well-being" Margin="10">
+                <StackPanel>
+                    <RadioButton x:Name="GoodMentalHealth" GroupName="Mental" Content="GOOD (POSITIVE, STRESS-FREE)" Margin="5" />
+                    <RadioButton x:Name="ModerateMentalHealth" GroupName="Mental" Content="MODERATE (SOMETIMES STRESSED)" Margin="5" />
+                    <RadioButton x:Name="PoorMentalHealth" GroupName="Mental" Content="POOR (FREQUENT STRESS/ANXIETY)" Margin="5" />
+                </StackPanel>
+            </GroupBox>
+
+            <!-- Buttons -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,30">
+                <Button x:Name="submitButtom"   Background="Green" Foreground="White" Click="submitButtom_Click" Width="90" Height="30" Margin="10,0" >
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <Border CornerRadius="5" Background= "{TemplateBinding Background}"  >
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Submit" ></ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button x:Name="ClearButtom"  Width="90" Height="30" Background="Green" Foreground="White" Click="ClearButtom_Click" Margin="10,0" >
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <Border CornerRadius="5" Background= "{TemplateBinding Background}"  >
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Clear" ></ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
