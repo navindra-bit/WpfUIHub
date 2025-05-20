@@ -27,7 +27,7 @@ git clone : https://github.com/navindra-bit/BasicWpfCalculator.git
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure 
 ```
 SimpleCalculatorWpf/
 │
