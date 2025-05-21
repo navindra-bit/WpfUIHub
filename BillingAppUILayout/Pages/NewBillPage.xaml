@@ -1,0 +1,95 @@
+﻿<Page x:Class="SampleAppLogin.Pages.NewBillPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SampleAppLogin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NewBillPage" Background="White">
+
+    <StackPanel>
+
+        <TextBlock Text="New SuperMarket Bill" Margin="10,15,15,15" Padding="10,0,0,0" FontSize="20" Height="30" FontWeight="Bold" Background="#2ECC71" ></TextBlock>
+        <StackPanel Margin="10">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Product : " FontWeight="Medium" FontSize="15"> </TextBlock>
+                <ComboBox x:Name="cmbProduct" SelectionChanged="cmbProduct_SelectionChanged" Width="190" Margin="0,0,10,0"></ComboBox>
+            <TextBlock Text="Unit : "  FontWeight="Medium" FontSize="15"></TextBlock>
+            <TextBox x:Name="unitBox" Padding="2" IsReadOnly="True" BorderThickness="0" Width="90" Margin="0,0,10,0"></TextBox>
+            <TextBlock Text="Price : " FontWeight="Medium" FontSize="15"></TextBlock>
+                <TextBox x:Name="priceBox" Padding="2"  IsReadOnly="True" BorderThickness="0" Width="90" Margin="0,0,10,0"></TextBox>
+        </StackPanel >
+        <StackPanel Orientation="Horizontal" Margin="0,10,10,0">
+            <TextBlock Text="Quantity : " FontWeight="Medium" FontSize="15"></TextBlock>
+                <TextBox x:Name="Quantitybox"    Padding="2.5"  Width="90" Margin="0,0,10,0"></TextBox>
+            <Button x:Name="addtobillbnt" Content="Add To Bill" Click="addtobillbnt_Click" FontWeight="Medium" FontSize="15" Foreground="White">
+                    <Button.Style >
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value >
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="5" Width="120" Height="25" Cursor="Hand" Background ="#3498DB">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                
+                                            </ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+            </Button>
+        </StackPanel>
+        <DataGrid x:Name="billdata"   AutoGenerateColumns="False" GridLinesVisibility="All" CanUserAddRows="True" CanUserDeleteRows="True" Height="200" Margin="0,20,0,0">
+            <DataGrid.Columns>
+                    <DataGridTextColumn Header="Product" Width="*" Binding="{Binding TITLE}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Unit" Width="100" Binding="{Binding STOCK_UNITS}" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="Price" Width="100" Binding="{Binding PRICE}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Quantity" Width="100" Binding="{Binding QUANTITY}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Total Price" Width="100" Binding="{Binding TOTAL_PRICE}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="Total Amount" Width="110"   FontWeight="Medium" FontSize="17"></TextBlock>
+            <TextBox x:Name="totalbox" Foreground="DarkGreen"   BorderThickness="0" FontWeight="Medium" FontSize="15" Width="100" Margin="0,0,10,0" IsReadOnly="True"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  Margin="20">
+            <Button Content="Print"  FontWeight="Medium" FontSize="17" Foreground="White">
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value >
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="5" Width="100" Height="35" Cursor="Hand" Margin="0,0,10,0" Background ="#3498DB">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                                        </ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button Content="Cancel"  FontWeight="Medium" FontSize="15" Foreground="White">
+                <Button.Style >
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value >
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="5" Width="100" Height="35" Cursor="Hand" Background ="#2C3E50">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                                        </ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
