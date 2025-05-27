@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Registration Page Title Style-->
+    <Style TargetType="TextBlock" x:Key="RegistrationTitle">
+        <Setter Property="Foreground" Value="#5c00c8"></Setter>
+        <Setter Property="FontSize" Value="28"></Setter>
+        <Setter Property="Margin" Value="0,-10,0,0"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="Height" Value="Auto"></Setter>
+    </Style>
+    <!--Username TextBlock in Registration Page-->
+    <Style x:Key="regusernameblock" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Setter Property="Width" Value="100"></Setter>
+        <Setter Property="Margin" Value="0,5,150,5"></Setter>
+
+        <Setter Property="Foreground" Value="#8033db"></Setter>
+    </Style>
+    <!--Password TextBlock in Registration Page-->
+    <Style x:Key="RegPasswordblock" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Setter Property="Width" Value="Auto"></Setter>
+        <Setter Property="Width" Value="100"></Setter>
+        <Setter Property="Margin" Value="0,2,150,5"></Setter>
+        <Setter Property="Foreground" Value="#8033db"></Setter>
+    </Style>
+    <!-- Confirm Password TextBlock in Registration Page-->
+    <Style x:Key="RegconfirmPasswordblock" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Setter Property="Width" Value="Auto"></Setter>
+        <Setter Property="Width" Value="150"></Setter>
+        <Setter Property="Margin" Value="0,2,100,5"></Setter>
+        <Setter Property="Foreground" Value="#8033db"></Setter>
+    </Style>
+    <!--Username textbox in Registration Page-->
+    <Style x:Key="regusernamebox" TargetType="TextBox">
+        <Setter Property="Width" Value="250"></Setter>
+        <Setter Property="Height" Value="25"></Setter>
+        <Setter Property="Padding" Value="1"></Setter>
+        <Setter Property="FontSize" Value="15"></Setter>
+    </Style>
+    <!--Password textbox in Registration Page-->
+    <Style x:Key="regpasswordbox" TargetType="TextBox">
+        <Setter Property="Width" Value="250"></Setter>
+        <Setter Property="Height" Value="25"></Setter>
+        <Setter Property="Padding" Value="0"></Setter>
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="Bold" ></Setter>
+    </Style>
+    <!--Email textblock in Registration Page-->
+    <Style x:Key="regemailblock" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="15"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        
+        <Setter Property="Width" Value="100"></Setter>
+        <Setter Property="Margin" Value="0,2,150,5"></Setter>
+        <Setter Property="Foreground" Value="#8033db"></Setter>
+    </Style>
+    <!--Email textbox in Registration Page-->
+    <Style x:Key="regemailbox" BasedOn="{StaticResource regusernamebox }" TargetType="TextBox">
+       
+    </Style>
+    <!--Mobile Number textblock in Registration Page-->
+    <Style x:Key="regphoneblock" TargetType="TextBlock" BasedOn="{StaticResource regusernameblock}">
+        <Setter Property="Width" Value="150"></Setter>
+        <Setter Property="Margin" Value="0,2,100,5"></Setter>
+
+    </Style>
+    <!--Mobile Number textbox in Registration Page-->
+    <Style x:Key="regphonebox" BasedOn="{StaticResource regusernamebox }" TargetType="TextBox">
+
+    </Style>
+    <!--CheckBox in Registration Page-->
+    <Style x:Key="checkboxreg" TargetType="CheckBox">
+        <Setter Property="Width" Value="Auto"></Setter>
+        <Setter Property="Margin" Value="0,3,0,0"></Setter>
+         
+    </Style>
+    <!--Term & Conditions button in Registration Page-->
+    <Style x:Key="termblock" TargetType="Button">
+        <Setter Property="Width" Value="Auto"></Setter>
+        <Setter Property="Padding" Value="3,0,0,5"></Setter>
+        <Setter Property="Margin" Value="0,3,0,0"></Setter>
+        <Setter Property="Foreground" Value="DarkBlue"></Setter>
+        <Setter Property="FontSize" Value="11"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+    </Style>
+    <!--Term & Conditions Accept button in Term & Conditions Page-->
+    <Style x:Key="termAcceptButton" TargetType="Button">
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="FontSize" Value="11"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+        <Setter Property="Background" Value="Green"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Setter Property="Margin" Value="0,0,10,0"></Setter>
+    </Style>
+    <!--Term & Conditions Reject button in Term & Conditions Page-->
+    <Style x:Key="termRejectButton" TargetType="Button">
+        <Setter Property="Margin" Value="10,0,0,0"></Setter>
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="FontSize" Value="11"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+        <Setter Property="Background" Value="Green"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+    </Style>
+    <!--Username & password alert label in Registration Page-->
+    <Style x:Key="erorralr" TargetType="Label">
+        <Setter Property="Height" Value="15"></Setter>
+        <Setter Property="FontSize" Value="10"></Setter>
+        <Setter Property="Foreground" Value="Red"></Setter>
+        <Setter Property="Padding" Value="0,0,0,2"></Setter>
+    </Style>
+</ResourceDictionary>
