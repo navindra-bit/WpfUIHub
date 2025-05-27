@@ -1,0 +1,77 @@
+﻿<Window x:Class="LoginAndRegisterPage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginAndRegisterPage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition Width="2*"  ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+             
+                <StackPanel x:Name="alllogin" Visibility="Visible"  Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+                <TextBlock Text="Sign In"  Style="{StaticResource LoginTitle }"></TextBlock>
+                <TextBlock Text="UserName"  Style="{StaticResource usernameblock}"></TextBlock>
+                <TextBox x:Name="logusername" Style="{StaticResource usernamebox}"></TextBox>
+                <Label x:Name="Usernamealr"   Style="{StaticResource logerorralr}"  Visibility="Collapsed"></Label>
+                <TextBlock Text="Password" Style="{StaticResource Passwordblock}"></TextBlock>
+                <PasswordBox x:Name="logpassword"  Style="{StaticResource passwordbox}"></PasswordBox>
+                <Label x:Name="Passwordalr" Style="{StaticResource logerorralr }"  Visibility="Collapsed"></Label>
+                <Button x:Name="loginbutton" Content="Sign In"  Click="loginbutton_Click"   Style="{StaticResource SignInInLog}"></Button>
+                </StackPanel>
+            
+            <StackPanel x:Name="Chgsingup" Visibility="Visible" Grid.Row="0" Grid.Column="0" Background="Yellow" >
+                <TextBlock Text="Welcome!"  Style="{StaticResource welbak }"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Text="If you're new here, "  Style="{StaticResource welnortext }" ></TextBlock>
+                <TextBlock  HorizontalAlignment="Center" Text=" please click below to register."  Style="{StaticResource welnortext }"></TextBlock>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="chgSignupbutton" Content="Sign Up"   Click="chgSignupbutton_Click"  Style="{StaticResource  SignUpInreg}" ></Button>
+            </StackPanel>
+            
+            <StackPanel x:Name="chgsingin" Visibility="Collapsed" Grid.Row="0" Grid.Column="0" Background="Yellow">
+                <TextBlock Text="Welcome Back!"  Style="{StaticResource welbak }"></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Text=" If you Already have an account? "  Style="{StaticResource welnortext }" ></TextBlock>
+                <TextBlock  HorizontalAlignment="Center" Text=" Click below to login"  Style="{StaticResource welnortext }"></TextBlock>
+                <Button x:Name="chgSigninbutton" Content="Sign In"   Click="chgSigninbutton_Click" Style="{StaticResource  SignUpInLog}" ></Button>
+            </StackPanel>
+            
+            <StackPanel x:Name="allregiter" Visibility="Collapsed" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Sign Up"  Style="{StaticResource RegistrationTitle}"></TextBlock>
+                <TextBlock Text="UserName"  Style="{StaticResource regusernameblock}"></TextBlock>
+                <TextBox x:Name="regusername" Style="{StaticResource regusernamebox}"></TextBox>
+                <Label x:Name="regUsernamealr"   Style="{StaticResource erorralr}"  Visibility="Collapsed"></Label>
+                
+                <TextBlock Text="Password" Style="{StaticResource RegPasswordblock}"></TextBlock>
+                <TextBox x:Name="regpassword"  Style="{StaticResource regpasswordbox}"></TextBox>
+                <Label x:Name="regpasswordalr"   Style="{StaticResource erorralr}"   Visibility="Collapsed"></Label>
+
+                <TextBlock Text="Conform Password" Style="{StaticResource RegconfirmPasswordblock}"></TextBlock>
+                <TextBox x:Name="regconformpassword"  Style="{StaticResource regpasswordbox}"></TextBox>
+                <Label x:Name="regconpasswordalr"   Style="{StaticResource erorralr}"   Visibility="Collapsed"></Label>
+
+                <TextBlock Text="Email" Style="{StaticResource regemailblock}" ></TextBlock>
+                <TextBox x:Name="emailbox" Style="{StaticResource regemailbox}"></TextBox>
+                <Label x:Name="regemailalr"   Style="{StaticResource erorralr}"   Visibility="Collapsed"></Label>
+
+                <TextBlock Text="Mobile Number" Style="{StaticResource regphoneblock}" ></TextBlock>
+                <TextBox x:Name="phonebox" Style="{StaticResource regphonebox}"></TextBox>
+                <Label x:Name="regphonenumalr"   Style="{StaticResource erorralr}"   Visibility="Collapsed"></Label>
+
+                <StackPanel Orientation="Horizontal" >
+                    <CheckBox x:Name="regtermcheckbox" Style="{StaticResource checkboxreg}" ></CheckBox>
+                    <Button x:Name="TermAndCon" Content="Terms &amp; Conditions" Style="{StaticResource termblock}" Click="TermAndCon_Click"></Button>
+                </StackPanel>
+                <Label x:Name="regtemalr"   Style="{StaticResource erorralr}"   Visibility="Collapsed"></Label>
+
+                <Button x:Name="registerbutton" Content="Sign up" Click="registerbutton_Click"  Style="{StaticResource Signupinreg}"></Button>
+            </StackPanel>
+        </Grid>
+        
+        
+    </Grid>
+</Window>
