@@ -1,0 +1,18 @@
+﻿<Application x:Class="LoginAndRegisterPage.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LoginAndRegisterPage"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StyleCSS\SignupAndSigninBottonStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="StyleCSS\LoiginPageStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="StyleCSS\RegisterPageStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="StyleCSS\WelcomeTextForLoginAndReg.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="StyleCSS\HomepageCSS\HomepageStyle.xaml"></ResourceDictionary>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
