@@ -7,10 +7,10 @@ The goal is to provide clean, ready-to-use XAML interfaces for building beautifu
 
 ## 📦 What's Inside
 
-- Pre-built login and registration screens
-- Custom styling and reusable resources
-- Clean layout with modern design principles
-- Organized structure for easy integration
+- Pre-built login and registration screens.
+- Custom styling and reusable resources.
+- Clean layout with modern design principles.
+- Organized structure for easy integration.
 
 ---
 
