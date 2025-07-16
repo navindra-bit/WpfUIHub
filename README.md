@@ -21,9 +21,9 @@ It contains simple and clean UI designs like login and registration pages, built
 
 You can use these designs as:
 
-- A starting point for your own WPF projects
-- Practice material to understand how WPF UI is created
-- Templates to quickly build desktop apps
+- A starting point for your own WPF projects.
+- Practice material to understand how WPF UI is created.
+- Templates to quickly build desktop apps.
 
 It helps new developers learn by example and save time while building beautiful apps.
 
