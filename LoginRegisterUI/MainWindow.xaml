@@ -195,3 +195,20 @@
 
 
 
+<!--<Path   Stretch="Uniform">
+
+    <Path.Fill>
+        <ImageBrush ImageSource=""></ImageBrush>
+    </Path.Fill>
+    <Path.Data>
+        <PathGeometry  >
+            <PathFigure StartPoint="300,0" IsClosed="True"  >
+                <LineSegment Point="400,0" />
+                <BezierSegment Point1="150,150" Point2="350,350" Point3="400,400"  />
+                <LineSegment Point="0,400" />
+                <LineSegment Point="0,0 "/>
+                <LineSegment Point="0,0" />
+            </PathFigure>
+        </PathGeometry>
+    </Path.Data>
+</Path>-->
