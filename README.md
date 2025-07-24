@@ -16,8 +16,8 @@ The goal is to provide clean, ready-to-use XAML interfaces for building beautifu
 
 ## 🎯 Purpose
 
-This repository is made for beginners who are learning WPF (Windows Presentation Foundation).  
-It contains simple and clean UI designs like login and registration pages, built using XAML.
+This repository is made for beginners who are learning WPF (Windows Presentation Foundation)
+It contains simple and clean UI designs like login and registration pages, built using XAML
 
 You can use these designs as:
 
